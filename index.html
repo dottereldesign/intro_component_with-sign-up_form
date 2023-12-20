@@ -34,39 +34,55 @@
 
         <article class="form_body">
           <form>
-            <input
-              type="text"
-              id="form_body-fname"
-              name="fname"
-              placeholder="First Name"
-            /><br />
-            <input
-              type="text"
-              id="form_body-lname"
-              name="lname"
-              placeholder="Last Name"
-            />
-            <input
-              type="email"
-              id="form_body-email"
-              name="email"
-              placeholder="Email Address"
-            />
-            <input
-              type="password"
-              id="form_body-pw"
-              name="pw"
-              placeholder="Password"
-            />
-          </form>
+            <div class="input-container input-container-error">
+              <input
+                type="text"
+                id="form_body-fname"
+                name="fname"
+                placeholder="First Name"
+                required
+              />
+            </div>
 
-          <a class="form_body-cta-link" href="#">
-            <div class="form_body-cta">Claim your free trial</div>
-          </a>
-          <small
-            >By clicking the button, you are agreeing to our
-            <a href="#">Terms and Services</a></small
-          >
+            <div class="input-container input-container-lname">
+              <input
+                type="text"
+                id="form_body-lname"
+                name="lname"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+
+            <div class="input-container input-container-email">
+              <input
+                type="email"
+                id="form_body-email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+
+            <div class="input-container input-container-pw">
+              <input
+                type="password"
+                id="form_body-pw"
+                name="pw"
+                placeholder="Password"
+                required
+              />
+            </div>
+
+            <button type="submit" class="form_body-cta">
+              Claim your free trial
+            </button>
+
+            <small>
+              By clicking the button, you are agreeing to our
+              <a href="#">Terms and Services</a>
+            </small>
+          </form>
         </article>
       </section>
     </main>
