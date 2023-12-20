@@ -6,6 +6,7 @@
 
   --clr-neutral-100: hsl(249, 10%, 26%);
   --clr-neutral-200: hsl(246, 25%, 77%);
+  --clr-neutral-300: hsl(240, 1%, 47%);
 
   --ff-primary-100: "Poppins", sans-serif;
 
@@ -157,8 +158,16 @@ main {
 }
 
 .form_header-cta {
+  box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.2); /* Adjust values as needed */
+}
+
+.form_header-cta:hover {
+  background-color: hsl(248, 32%, 49%, 0.8);
+}
+
+.form_header-cta {
   width: min(100%, 420px);
-  padding: 32px 0;
+  padding: 24px;
   background-color: var(--clr-accent-100);
   border-radius: 10px;
   text-align: center;
@@ -202,6 +211,34 @@ form > * {
   font-size: var(--fs-400);
   font-weight: var(--fw-semi-bold);
   text-transform: uppercase;
+  box-shadow: 0px 3px 0px 2px hsl(154, 37%, 50%); /* Adjust values as needed */
+}
+
+.form_body-cta:hover {
+  background-color: hsl(154, 59%, 51%, 0.8);
+}
+
+input::placeholder {
+  color: var(--clr-neutral-200);
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-400);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-400);
+  padding-left: 16px;
+  font-weight: var(--fw-semi-bold);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 2px solid var(--clr-neutral-100); /* Example: blue border */
+  outline: none; /* Removes the default outline */
+  /* Add other focus styles if needed */
 }
 
 small {
@@ -274,7 +311,7 @@ small a {
 
   .form_header-cta {
     width: min(100%, 520px);
-    padding: 32px 0;
+    padding: 24px;
     background-color: var(--clr-accent-100);
     border-radius: 10px;
     text-align: center;
